@@ -1,0 +1,251 @@
+2026-10-06 00:57:59,102 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-10-06 00:57:59,103 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-10-06 00:57:59,103 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-10-06 00:57:59,103 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-10-06 00:57:59,103 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-10-06 00:57:59,104 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-10-06 00:57:59,104 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-10-06 00:57:59,104 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-10-06 00:57:59,104 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-10-06 00:57:59,104 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-10-06 00:57:59,104 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-10-06 00:57:59,104 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-10-06 00:57:59,104 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-10-06 00:57:59,104 : INFO  : main :  : NodeLogger :  :  : # /Users/krinashah/projects/Form-ADV-Investment-Adviser-Risk-Analysis/knime/.metadata/knime/knime.log
+2026-10-06 00:57:59,104 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-10-06 00:57:59,112 : INFO  : main :  : NodeLogger :  :  : # logging date=Tue Oct 06 00:57:59 IST 2026
+2026-10-06 00:57:59,112 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-10-06 00:57:59,112 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-10-06 00:57:59,112 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-10-06 00:57:59,112 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-10-06 00:57:59,112 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-10-06 00:57:59,112 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-10-06 00:57:59,112 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-10-06 00:57:59,115 : INFO  : main :  : NodeLogger :  :  : # host=192.168.1.9
+2026-10-06 00:57:59,117 : INFO  : main :  : NodeLogger :  :  : # username=krinashah
+2026-10-06 00:57:59,117 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-10-06 00:57:59,118 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-10-06 00:57:59,122 : INFO  : main :  : NodeLogger :  :  : # KNID=11-f9b15e90822df9be-01-74db96e4ad6e12ac
+2026-10-06 00:57:59,122 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-10-06 00:57:29,579 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-10-06 00:58:00,204 : INFO  : main :  : StringHistory :  :  : History file '/Users/krinashah/projects/Form-ADV-Investment-Adviser-Risk-Analysis/knime/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-10-06 00:58:00,204 : INFO  : main :  : StringHistory :  :  : History file '/Users/krinashah/projects/Form-ADV-Investment-Adviser-Risk-Analysis/knime/.metadata/knime/history_database_urls.txt' does not exist.
+2026-10-06 00:58:00,911 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-10-06 00:58:00,915 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/krinashah/projects/Form-ADV-Investment-Adviser-Risk-Analysis/knime/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-10-06 00:58:01,865 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-10-06 00:58:02,072 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-10-06 00:58:02,072 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-10-06 00:58:02,386 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-10-06 00:58:02,472 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/krinashah/projects/Form-ADV-Investment-Adviser-Risk-Analysis/knime/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-10-06 00:58:02,486 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-10-06 00:58:02,754 : INFO  : main :  : StringHistory :  :  : History file '/Users/krinashah/projects/Form-ADV-Investment-Adviser-Risk-Analysis/knime/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-10-06 00:58:02,868 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-10-06 00:58:02,907 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-10-06 00:58:02,920 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-10-06 00:58:02,927 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-10-06 00:58:02,953 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-10-06 00:58:02,953 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-10-06 00:58:02,967 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-10-06 00:58:02,971 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-10-06 00:58:02,971 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-10-06 00:58:03,241 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-10-06 00:58:29,890 : INFO  : Thread-1715 :  : Server :  :  : jetty-12.0.21; built: 2025-05-09T00:32:00.688Z; git: 1c4719601e31b05b7d68910d2edd980259f1f53c; jvm 21.0.9+10-LTS
+2026-10-06 00:58:29,909 : INFO  : Thread-1715 :  : AbstractConnector :  :  : Started ServerConnector@7bfaa810{HTTP/1.1, (http/1.1)}{0.0.0.0:53764}
+2026-10-06 00:58:29,910 : INFO  : Thread-1715 :  : Server :  :  : Started oejs.Server@3e4f33d9{STARTING}[12.0.21,sto=0] @61164ms
+2026-10-06 00:58:29,910 : INFO  : Thread-1715 :  : OAuthAuthenticator :  :  : Opening browser to perform authentication for 'https://api.hub.knime.com'.
+2026-10-06 00:58:35,708 : INFO  : Thread-1715 :  : Server :  :  : Stopped oejs.Server@3e4f33d9{STOPPING}[12.0.21,sto=0]
+2026-10-06 00:58:35,718 : WARN  : Thread-1715 :  : AbstractLifeCycle :  :  : FAILED oeji.ManagedSelector@49ae807{FAILED}[id=3 keys=0 selected=0 updates=0 selection:tot=0/avg=0.00/max=0]: java.lang.InterruptedException
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(Unknown Source)
+	at java.base/java.util.concurrent.CountDownLatch.await(Unknown Source)
+	at org.eclipse.jetty.io.ManagedSelector.doStop(ManagedSelector.java:138)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:180)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:202)
+	at org.eclipse.jetty.io.SelectorManager.doStop(SelectorManager.java:280)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:180)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:202)
+	at org.eclipse.jetty.server.AbstractConnector.doStop(AbstractConnector.java:375)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStop(AbstractNetworkConnector.java:83)
+	at org.eclipse.jetty.server.ServerConnector.doStop(ServerConnector.java:245)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:679)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at com.knime.explorer.server.rest.OAuthAuthenticator.stopServer(OAuthAuthenticator.java:811)
+	at com.knime.explorer.server.rest.OAuthAuthenticator.login(OAuthAuthenticator.java:659)
+	at com.knime.explorer.server.rest.OAuthLoginDialog.lambda$0(OAuthLoginDialog.java:179)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2026-10-06 00:58:35,732 : WARN  : Thread-1715 :  : AbstractLifeCycle :  :  : FAILED ServerConnectorManager@4576426a[keys=0]: java.lang.InterruptedException
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(Unknown Source)
+	at java.base/java.util.concurrent.CountDownLatch.await(Unknown Source)
+	at org.eclipse.jetty.io.ManagedSelector.doStop(ManagedSelector.java:138)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:180)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:202)
+	at org.eclipse.jetty.io.SelectorManager.doStop(SelectorManager.java:280)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:180)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:202)
+	at org.eclipse.jetty.server.AbstractConnector.doStop(AbstractConnector.java:375)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStop(AbstractNetworkConnector.java:83)
+	at org.eclipse.jetty.server.ServerConnector.doStop(ServerConnector.java:245)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:679)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at com.knime.explorer.server.rest.OAuthAuthenticator.stopServer(OAuthAuthenticator.java:811)
+	at com.knime.explorer.server.rest.OAuthAuthenticator.login(OAuthAuthenticator.java:659)
+	at com.knime.explorer.server.rest.OAuthLoginDialog.lambda$0(OAuthLoginDialog.java:179)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2026-10-06 00:58:35,732 : WARN  : Thread-1715 :  : AbstractLifeCycle :  :  : FAILED ServerConnector@7bfaa810{HTTP/1.1, (http/1.1)}{0.0.0.0:53764}: java.lang.InterruptedException
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(Unknown Source)
+	at java.base/java.util.concurrent.CountDownLatch.await(Unknown Source)
+	at org.eclipse.jetty.io.ManagedSelector.doStop(ManagedSelector.java:138)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:180)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:202)
+	at org.eclipse.jetty.io.SelectorManager.doStop(SelectorManager.java:280)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:180)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:202)
+	at org.eclipse.jetty.server.AbstractConnector.doStop(AbstractConnector.java:375)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStop(AbstractNetworkConnector.java:83)
+	at org.eclipse.jetty.server.ServerConnector.doStop(ServerConnector.java:245)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:679)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at com.knime.explorer.server.rest.OAuthAuthenticator.stopServer(OAuthAuthenticator.java:811)
+	at com.knime.explorer.server.rest.OAuthAuthenticator.login(OAuthAuthenticator.java:659)
+	at com.knime.explorer.server.rest.OAuthLoginDialog.lambda$0(OAuthLoginDialog.java:179)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2026-10-06 00:58:35,733 : INFO  : Thread-1715 :  : AbstractConnector :  :  : Stopped ServerConnector@7bfaa810{HTTP/1.1, (http/1.1)}{0.0.0.0:53764}
+2026-10-06 00:58:38,239 : WARN  : qtp892451923-1808 :  : ManagedSelector :  :  : select() failure
+java.nio.channels.ClosedSelectorException
+	at org.eclipse.jetty.io.ManagedSelector.select(ManagedSelector.java:196)
+	at org.eclipse.jetty.io.ManagedSelector$SelectorProducer.select(ManagedSelector.java:614)
+	at org.eclipse.jetty.io.ManagedSelector$SelectorProducer.produce(ManagedSelector.java:548)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.produceTask(AdaptiveExecutionStrategy.java:514)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:258)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.produce(AdaptiveExecutionStrategy.java:195)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:981)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1211)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1166)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2026-10-06 00:58:38,242 : WARN  : Thread-1715 :  : AbstractLifeCycle :  :  : FAILED oejs.Server@3e4f33d9{FAILED}[12.0.21,sto=0]: java.lang.InterruptedException
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(Unknown Source)
+	at java.base/java.util.concurrent.CountDownLatch.await(Unknown Source)
+	at org.eclipse.jetty.io.ManagedSelector.doStop(ManagedSelector.java:138)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:180)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:202)
+	at org.eclipse.jetty.io.SelectorManager.doStop(SelectorManager.java:280)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:180)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:202)
+	at org.eclipse.jetty.server.AbstractConnector.doStop(AbstractConnector.java:375)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStop(AbstractNetworkConnector.java:83)
+	at org.eclipse.jetty.server.ServerConnector.doStop(ServerConnector.java:245)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:679)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at com.knime.explorer.server.rest.OAuthAuthenticator.stopServer(OAuthAuthenticator.java:811)
+	at com.knime.explorer.server.rest.OAuthAuthenticator.login(OAuthAuthenticator.java:659)
+	at com.knime.explorer.server.rest.OAuthLoginDialog.lambda$0(OAuthLoginDialog.java:179)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2026-10-06 00:58:38,243 : WARN  : Thread-1715 :  : OAuthAuthenticator :  :  : Could not stop OAuth redirect listener: null
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(Unknown Source)
+	at java.base/java.util.concurrent.CountDownLatch.await(Unknown Source)
+	at org.eclipse.jetty.io.ManagedSelector.doStop(ManagedSelector.java:138)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:180)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:202)
+	at org.eclipse.jetty.io.SelectorManager.doStop(SelectorManager.java:280)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:180)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:202)
+	at org.eclipse.jetty.server.AbstractConnector.doStop(AbstractConnector.java:375)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStop(AbstractNetworkConnector.java:83)
+	at org.eclipse.jetty.server.ServerConnector.doStop(ServerConnector.java:245)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:679)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at com.knime.explorer.server.rest.OAuthAuthenticator.stopServer(OAuthAuthenticator.java:811)
+	at com.knime.explorer.server.rest.OAuthAuthenticator.login(OAuthAuthenticator.java:659)
+	at com.knime.explorer.server.rest.OAuthLoginDialog.lambda$0(OAuthLoginDialog.java:179)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2026-10-06 01:00:05,679 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : # /Users/krinashah/projects/Form-ADV-Investment-Adviser-Risk-Analysis/knime/.metadata/knime/knime.log
+2026-10-06 01:00:05,680 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-10-06 01:00:05,689 : INFO  : main :  : NodeLogger :  :  : # logging date=Tue Oct 06 01:00:05 IST 2026
+2026-10-06 01:00:05,689 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-10-06 01:00:05,689 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-10-06 01:00:05,689 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-10-06 01:00:05,689 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-10-06 01:00:05,689 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-10-06 01:00:05,689 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-10-06 01:00:05,689 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-10-06 01:00:05,692 : INFO  : main :  : NodeLogger :  :  : # host=192.168.1.9
+2026-10-06 01:00:05,694 : INFO  : main :  : NodeLogger :  :  : # username=krinashah
+2026-10-06 01:00:05,694 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-10-06 01:00:05,695 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-10-06 01:00:05,699 : INFO  : main :  : NodeLogger :  :  : # KNID=11-f9b15e90822df9be-01-74db96e4ad6e12ac
+2026-10-06 01:00:05,699 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-10-06 00:59:58,151 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-10-06 01:00:06,721 : INFO  : main :  : StringHistory :  :  : History file '/Users/krinashah/projects/Form-ADV-Investment-Adviser-Risk-Analysis/knime/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-10-06 01:00:06,721 : INFO  : main :  : StringHistory :  :  : History file '/Users/krinashah/projects/Form-ADV-Investment-Adviser-Risk-Analysis/knime/.metadata/knime/history_database_urls.txt' does not exist.
+2026-10-06 01:00:07,389 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-10-06 01:00:07,405 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/krinashah/projects/Form-ADV-Investment-Adviser-Risk-Analysis/knime/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-10-06 01:00:07,974 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-10-06 01:00:07,974 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-10-06 01:00:08,289 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/krinashah/projects/Form-ADV-Investment-Adviser-Risk-Analysis/knime/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-10-06 01:00:08,390 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-10-06 01:00:08,605 : INFO  : main :  : StringHistory :  :  : History file '/Users/krinashah/projects/Form-ADV-Investment-Adviser-Risk-Analysis/knime/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-10-06 01:00:08,812 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-10-06 01:00:08,855 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-10-06 01:00:08,951 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-10-06 01:00:09,404 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-10-06 01:00:09,432 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-10-06 01:00:09,442 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-10-06 01:00:09,460 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-10-06 01:00:09,467 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-10-06 01:00:09,467 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-10-06 01:00:09,471 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-10-06 01:00:09,473 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-10-06 01:00:09,473 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-10-06 01:00:26,049 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x000000d001515698 :  : FileUtil :  :  : Deleting 1 temporary files.

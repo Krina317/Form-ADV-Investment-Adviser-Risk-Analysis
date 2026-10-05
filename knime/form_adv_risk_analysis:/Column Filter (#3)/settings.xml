@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="column-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="31"/>
+                <entry key="0" type="xstring" value="HasWebsite_Flag"/>
+                <entry key="1" type="xstring" value="NumEmployees"/>
+                <entry key="2" type="xstring" value="NumEmployees_Advisory"/>
+                <entry key="3" type="xstring" value="HasRegulatoryAUM_Flag"/>
+                <entry key="4" type="xstring" value="Discretionary_AUM"/>
+                <entry key="5" type="xstring" value="NonDiscretionary_AUM"/>
+                <entry key="6" type="xstring" value="Total_AUM_USD"/>
+                <entry key="7" type="xstring" value="Total_NumAccounts"/>
+                <entry key="8" type="xstring" value="Service_FinancialPlanning"/>
+                <entry key="9" type="xstring" value="Service_PortfolioMgmt_Individuals"/>
+                <entry key="10" type="xstring" value="Service_PortfolioMgmt_InvestmentCompanies"/>
+                <entry key="11" type="xstring" value="Service_PortfolioMgmt_PooledVehicles"/>
+                <entry key="12" type="xstring" value="Service_PortfolioMgmt_Businesses"/>
+                <entry key="13" type="xstring" value="Service_PensionConsulting"/>
+                <entry key="14" type="xstring" value="Service_SelectionOfOtherAdvisers"/>
+                <entry key="15" type="xstring" value="Service_Publications"/>
+                <entry key="16" type="xstring" value="Service_SecurityRatings"/>
+                <entry key="17" type="xstring" value="Service_MarketTiming"/>
+                <entry key="18" type="xstring" value="Service_EducationalSeminars"/>
+                <entry key="19" type="xstring" value="Service_Other"/>
+                <entry key="20" type="xstring" value="Fee_PercentAUM"/>
+                <entry key="21" type="xstring" value="Fee_Hourly"/>
+                <entry key="22" type="xstring" value="Fee_FixedFee"/>
+                <entry key="23" type="xstring" value="Fee_Commission"/>
+                <entry key="24" type="xstring" value="Fee_PerformanceBased"/>
+                <entry key="25" type="xstring" value="Fee_Other"/>
+                <entry key="26" type="xstring" value="NumClients_Bucket"/>
+                <entry key="27" type="xstring" value="Custody_ClientFunds_Flag"/>
+                <entry key="28" type="xstring" value="Custody_ClientSecurities_Flag"/>
+                <entry key="29" type="xstring" value="HasDisclosure_Overall_Flag"/>
+                <entry key="30" type="xstring" value="OrgForm"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="21"/>
+                <entry key="0" type="xstring" value="FilingID"/>
+                <entry key="1" type="xstring" value="DateSubmitted"/>
+                <entry key="2" type="xstring" value="LegalName"/>
+                <entry key="3" type="xstring" value="BusinessName_Primary"/>
+                <entry key="4" type="xstring" value="CRD_Number"/>
+                <entry key="5" type="xstring" value="Office_City"/>
+                <entry key="6" type="xstring" value="Office_State"/>
+                <entry key="7" type="xstring" value="Office_Country"/>
+                <entry key="8" type="xstring" value="Office_Postal"/>
+                <entry key="9" type="xstring" value="StateOfOrg"/>
+                <entry key="10" type="xstring" value="CountryOfOrg"/>
+                <entry key="11" type="xstring" value="Disclosure_Bond_Flag"/>
+                <entry key="12" type="xstring" value="Disclosure_Bankruptcy_Flag"/>
+                <entry key="13" type="xstring" value="Disclosure_CivilJudicial1"/>
+                <entry key="14" type="xstring" value="Disclosure_SROAction1"/>
+                <entry key="15" type="xstring" value="Disclosure_RegulatoryAction2"/>
+                <entry key="16" type="xstring" value="Disclosure_RegulatoryAction1"/>
+                <entry key="17" type="xstring" value="Disclosure_CriminalMisdemeanor_Affiliate"/>
+                <entry key="18" type="xstring" value="Disclosure_CriminalMisdemeanor_Firm"/>
+                <entry key="19" type="xstring" value="Disclosure_CriminalFelony_Affiliate"/>
+                <entry key="20" type="xstring" value="Disclosure_CriminalFelony_Firm"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+            </config>
+            <config key="datatype">
+                <config key="typelist"/>
+            </config>
+        </config>
+    </config>
+    <config key="variables"/>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Column Filter"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.12.0.v202606261225"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.12.0.v202606261225"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Column Filter"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 84620, Cols: 31"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="5420e7ac-41dd-4ccb-89ec-cef389dadb40"/>
+    </config>
+</config>
