@@ -201,44 +201,6 @@ Values: `Y/N` flags are strings. "Missing" is the share of empty cells.
 
 ---
 
-## 5. Data-quality issues found (please read; several of them change your dashboards)
-
-I checked the data and the Tableau workbook against each other. Items D1-D3 (data mapping) and D10-D11 (dashboard calculations) matter most.
-
-**D1 – `Total_NumAccounts` is NOT a count of accounts (affects Dashboard 2, sheets 2.2 and 2.6).**
-`final_select.py` maps source column `5F3` to `Total_NumAccounts`, but your earlier `rename_columns.py` mapped the account count to `5F2f`. The values in the CSV (median 0, 75th percentile 6,971,027, maximum 1.26 trillion) are dollar amounts. In Form ADV, item 5F(3) is the *regulatory AUM attributable to non-US clients*, whereas the number of accounts is item 5F(2)(f). Fix: re-run `final_select.py` with `'5F2f': 'Total_NumAccounts'` (and optionally `5F2d`, `5F2e`), or rename the current field to `NonUS_Client_AUM`. Then rebuild "AUM vs Account Scale" and the peer-comparison bubble sizes.
-
-**D2 – Fee column mapping is probably shifted by one (affects sheet 2.4).**
-In Form ADV item 5E the order is (1) % of AUM, (2) hourly, (3) *subscription*, (4) *fixed fees*, (5) *commissions*, (6) *performance-based*, (7) other. The script maps 5E3 → "Fixed", 5E4 → "Commission", 5E5 → "Performance". The prevalences in the data agree with a shift: your "Commission" is ticked by 52% of firms (that is typical of *fixed fees*) and your "Performance-based" by only 3% (typical of *commissions*). Your "Fixed" at 1.6% looks like *subscription fees*. `5E6` (the real performance-based flag) is not in the output. **Please check this against the Form ADV PDF or the data dictionary that ships with the SEC download**, since I could not open the SEC source from here.
-
-**D3 – `HasDisclosure_Overall_Flag` (source column `11`) is inconsistent with the detail columns.**
-Of the 6,801 filings flagged `Y`, 2,411 have no detail column set to `Y`; and of the 77,819 flagged `N`, 3,843 have at least one detail `Y`. Also 1,069 of the 2,317 filings that have DRP events say `N`. The detail columns you kept are only some of the Item 11 questions, so the overall flag may reflect others, but the pattern is worth confirming. Safer label: derive your own, e.g. `any_disclosure = any Item-11 column == 'Y'` (or take both flags and check), and document the choice.
-
-**D4 – Item 11 labels ("Firm" vs "Affiliate", "SRO", "Civil", "Bankruptcy", "Bond") are probably misnamed.**
-In Form ADV, Item 11 asks about "you *or any advisory affiliate*" together; the `1`/`2` suffixes are separate questions (e.g. *convicted* vs *charged*), not firm vs affiliate. Also, as I read the form, 11D is "other federal/state/foreign regulator", 11E is "SRO", and 11F/11G are different items from bankruptcy/bond. Please verify each against the form before presenting; the safest fix is to name columns after the question (`Item11A_FelonyConvicted`, `Item11C_SEC_FalseStatement`...), not after your interpretation.
-
-**D5 – Multiple filings per firm.** 84,620 filings for 17,703 firms. Counting rows over-weights firms that amend often. For firm-level statistics, take the latest filing per `CRD_Number` (disclosure rate 5.3% per firm versus 8.0% per filing).
-
-**D6 – Regulator names are not standardised.** "SECURITIES AND EXCHANGE COMMISSION", "UNITED STATES SECURITIES AND EXCHANGE COMMISSION" and "SEC" are separate values; likewise "FINRA" and "FINANCIAL INDUSTRY REGULATORY AUTHORITY". This splits bubbles in sheet 1.3. Add a small mapping dictionary in `process_drp.py`.
-
-**D7 – Resolution time is mostly zero.** For the 3,200 events with a valid resolution date the median is 0 days, 70% are resolved on the day they start, 80% within 30 days, and the mean is about 46 days (max 613). 25 rows have a resolution date *before* the start date (your calculated field already excludes them). Unresolved cases have no end date (right-censored), so recent months look artificially fast.
-
-**D8 – Other missing data.** `NumClients_Bucket` 37%; AUM 3% (firms without regulatory AUM); `Office_State` 11% (all non-US); `MonetaryAmount` 14%; DRP `Other_Sanctions` 68%.
-
-**D9 – Possible time-window effect.** DRP rows are 6,307 for 2023 vs 2,527 for 2024. Check whether this reflects real activity or only the way the source file is cut (events initiated late in 2024 may not be in a filing yet) before drawing a trend conclusion.
-
-**D10 – Repeated events inflate sums and medians (affects sheets 1.2 and 3.5).**
-The same event appears in every filing that reports it (8,834 rows for 3,840 events; one event appears up to 68 times). `COUNTD(EventID)` is safe, but `SUM(MonetaryAmount)` and `MEDIAN(MonetaryAmount)` are not. Total fines are $105.4B by rows against $58.5B by distinct event. The Cease and Desist median is $6.0M by rows against $375K by event; the civil penalty median is $90K by rows against $175K by event. Safe fix: build an **event-level table** in `process_drp.py` (keep the row from the latest filing for each `EventID`). Every event belongs to exactly one firm (checked: 0 of 3,840 events map to more than one `CRD_Number`), and fewer than 10 events have differing values across their rows. A `FIXED` LOD followed by `SUM` does **not** solve this (the value is still repeated per row), so avoid that route.
-
-**D11 – Missing AUM is counted as ">$10B" (sheet 2.1).**
-In `AUM Size Category`, a missing `Total_AUM_USD` is neither `< 10M` nor any later test, so it reaches the `ELSE` branch. The ">$10B" bar shows 11,350 filings: 8,707 real plus 2,643 with no AUM. Add `IF ISNULL([Total_AUM_USD]) THEN "No AUM reported"` as the first test.
-
-**D12 – Two Dashboard 1 sheets show less than they claim.** Sheet 1.1 uses month-of-year, so 2023 and 2024 are merged, and sheet 1.3 plots 36 mid-sized authorities (7-15 events each) with no labels, not the leading ones.
-
-**D13 – Case status shares.** Among the 3,840 distinct events: Final 82%, Pending 9.2%, On Appeal 1.3%, status missing 7.3%. (Row-level figures such as "94% final" overstate finality because they ignore missing status and weight repeated events.)
-
----
-
 ## 6. Machine learning plan
 
 ### 6.1 What is Y?
@@ -497,18 +459,6 @@ Dashboard 3 uses only the **DRP table** and counts distinct events (3,840).
 5. **Sheet 1.1:** continuous month axis; **1.4, 1.6:** better colour scales.
 6. **Dashboard 2 redesign** as described in 7.2.
 7. **3.2 and 3.4:** use the median / resolution categories and log buckets.
-
-
----
-
-## 8. Suggested next steps
-
-1. **Fix D1-D4** in `final_select.py` (re-map `5F2f`, check the 5E and Item 11 mappings, derive `any_disclosure`), regenerate the CSV and refresh Tableau.
-2. Add a firm-level table (latest filing per `CRD_Number`) and use it for all rate charts.
-3. In `process_drp.py`: build an **event-level table** (one row per `EventID`, D10), standardise `Initiated_By`, and add a "severe sanction" flag.
-4. Rebuild Dashboard 2 around "disclosure rate by firm characteristic" (section 7.2), and apply the fix list in 7.5 to Dashboards 1 and 3.
-5. Run the ML pipeline in section 6 in a notebook (`02_modeling.ipynb`): logistic regression → gradient boosting, grouped CV, PR-AUC, SHAP; K-Means segmentation with cluster profiles.
-6. Optional: TF-IDF topic modelling on `Allegations` (the main misconduct themes), and an enforcement-by-state rate normalised per 1,000 firms.
 
 ---
 
